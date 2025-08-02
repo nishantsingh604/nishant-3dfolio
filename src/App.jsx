@@ -1,7 +1,10 @@
-import React from 'react'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
 
-export const App = () => {
-  return (
-    <div className='text-3xl font-bold underline text-green-500 '>Made by Nishant</div>
-  )
-}
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
