@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroText from "./../components/HeroText";
 import DotGrid from "./../components/DotGrid";
-import { Room } from "../components/Room";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+
 const Hero = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src = "https://unpkg.com/@splinetool/viewer@1.10.45/build/spline-viewer.js";
+    document.body.appendChild(script);
+  }, []);
+
   return (
-    <section className=" flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
-      {/* DotGrid full-page background */}
+    <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
       <div
         style={{
           position: "absolute",
@@ -29,23 +33,14 @@ const Hero = () => {
           resistance={750}
           returnDuration={1.5}
         />
-
-      {/* Foreground content */}
       </div>
       <HeroText />
-
-      <figure
-        className="absolute inset-0"
-        style={{ width: "100vw", height: "100vh" }}
-      >
-        <Canvas camera={{ position: [0, 2, 5], fov: 50 }}>
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[5, 5, 5]} intensity={1} />
-          <Room scale={0.087} position={[2.48,-0.60,0]} />
-          <OrbitControls />
-        </Canvas>
-      </figure>
-    </section>
+      <spline-viewer
+        url="https://prod.spline.design/agc6o22yhhaOc0mq/scene.splinecode"
+        className="z-10  pt-0 pl-25 pb-1 text-center md:mt-27 md:text-left  isolate  w-120 h-125 "
+      ></spline-viewer>
+    
+      </section>
   );
 };
 

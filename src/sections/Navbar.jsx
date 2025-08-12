@@ -21,7 +21,7 @@ const Navbard = () => {
   // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative w-full mt-3">
+    <div className="relative w-full mt-3 z-50">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
