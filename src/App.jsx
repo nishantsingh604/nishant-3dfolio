@@ -8,21 +8,20 @@ import Projects from "./sections/Projects";
 // import Testimonial from "./sections/Testimonial";
 // import Contact from "./sections/Contact";
 // import Footer from "./sections/Footer";
-
 const App = () => {
   return (
-    <div className="container mx-auto max-w-7xl">
-      <Navbard />
-      <Hero />
-     
+    <>
+      <div className="container mx-auto">
+        <Navbard />
+        <Hero />
+      </div>
+
+      {/* Full-width white background */}
       <Projects />
-    
-      {/* <About />
-      <Experiences />
-      <Testimonial />
-      <Contact />
-      <Footer /> */}
-    </div>
+
+      {/* Other container-based sections */}
+      {/* <About /> ... */}
+    </>
   );
 };
 
