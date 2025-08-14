@@ -4,10 +4,11 @@ import Lanyard from "../components/Lanyard/Lanyard";
 const Projects = () => {
   return (
     <section
-      className="w-full min-h-screen bg-white flex flex-col md:flex-row items-center justify-center overflow-hidden"
+      className="w-full bg-white flex flex-col md:flex-row items-center justify-center overflow-hidden"
       style={{
         margin: 0,
-        padding: 0
+        padding: 0,
+        minHeight: "60vh" // shorter height
       }}
     >
       {/* Lanyard Column */}
