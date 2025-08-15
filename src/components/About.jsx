@@ -27,7 +27,7 @@ const About = () => {
         <div className="flex-1 md:basis-[40%] p-8 rounded-xl bg-black/70 shadow-lg ring-1 ring-black/5 h-60 flex flex-col justify-center">
           <h2 className="text-2xl font-semibold mb-4">My Approach</h2>
           <p className="text-neutral-300 text-lg">
-            Focused on clean code, user-centered design, and delivering projects
+            Focused on clean code, user-centered design,  and delivering projects
             that exceed expectations.
           </p>
         </div>

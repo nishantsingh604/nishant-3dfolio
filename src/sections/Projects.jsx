@@ -18,7 +18,8 @@ const Projects = () => {
           flex: "0 0 40%",
           width: "100%",
           height: "100%",
-          pointerEvents: "auto"
+          pointerEvents: "auto",
+          zIndex: 10,
         }}
       >
         <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
@@ -30,7 +31,8 @@ const Projects = () => {
         style={{
           flex: "0 0 60%",
           width: "100%",
-          height: "100%"
+          height: "100%",
+          zIndex: 7,
         }}
       >
         <About />
