@@ -1,6 +1,7 @@
 import About from "../components/About";
 import Lanyard from "../components/Lanyard/Lanyard";
 
+
 const Projects = () => {
   return (
     <section
@@ -36,6 +37,7 @@ const Projects = () => {
         }}
       >
         <About />
+        
       </div>
     </section>
   );
