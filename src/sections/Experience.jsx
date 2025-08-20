@@ -1,4 +1,5 @@
 import React from 'react'
+import { BentoGridThirdDemo } from './../components/Bento';
 
 const Experience = () => {
   return (
@@ -10,6 +11,7 @@ const Experience = () => {
         minHeight: "100vh" // shorter height
       }}
     >
+        <BentoGridThirdDemo />
      </section>  
   );
 }

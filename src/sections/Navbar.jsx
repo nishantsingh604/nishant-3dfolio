@@ -28,7 +28,12 @@ const Navbard = () => {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Github</NavbarButton>
+            <NavbarButton
+              variant="secondary"
+              href={"https://github.com/nishantsingh604"}
+            >
+              Github
+            </NavbarButton>
             <NavbarButton variant="primary">Resume</NavbarButton>
           </div>
         </NavBody>
@@ -76,8 +81,6 @@ const Navbard = () => {
           </MobileNavMenu>
         </MobileNav> */}
       </Navbar>
-
-
     </div>
   );
 };
