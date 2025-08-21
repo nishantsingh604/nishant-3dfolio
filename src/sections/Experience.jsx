@@ -1,6 +1,6 @@
 import React from 'react'
 import { BentoGridThirdDemo } from './../components/Bento';
-// import ExpandableCardDemo from './../components/expandable-card-demo-standard';
+import ExpandableCardDemo from './../components/expandable-card-demo-standard';
 // import ExpandableCardDemo from './../components/expandable-card-demo-grid';
 
 const Experience = () => {

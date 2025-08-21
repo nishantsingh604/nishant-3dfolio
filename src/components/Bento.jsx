@@ -15,7 +15,7 @@ import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className=" mt-20 mb-20 max-w-7xl mx-auto md:auto-rows-[20rem] grid-cols-4 gap-6">
+    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
