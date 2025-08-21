@@ -15,7 +15,7 @@ import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className=" mt-20 mb-20 max-w-7xl mx-auto md:auto-rows-[20rem] grid-cols-4 gap-6">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -294,8 +294,7 @@ const SkeletonFive = () => {
       </motion.div>
     </motion.div>
   );
-};
-const items = [
+};const items = [
   {
     title: "AI Content Generation",
     description: (
@@ -340,7 +339,6 @@ const items = [
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />
   },
-
   {
     title: "Text Summarization",
     description: (
@@ -351,5 +349,42 @@ const items = [
     header: <SkeletonFive />,
     className: "md:col-span-1",
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />
+  },
+  // 🚀 New Projects from Resume / GitHub
+  {
+    title: "SJF CPU Scheduler",
+    description: (
+      <span className="text-sm">
+        Web-based simulator for Shortest Job First scheduling, built with HTML,
+        CSS & JS. Visualizes process execution & turnaround times.
+      </span>
+    ),
+    header: <SkeletonOne />,
+    className: "md:col-span-1",
+    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />
+  },
+  {
+    title: "Banker's Algorithm in Java",
+    description: (
+      <span className="text-sm">
+        Implementation of Banker's Algorithm for deadlock avoidance with
+        real-time allocation & safety checks.
+      </span>
+    ),
+    header: <SkeletonTwo />,
+    className: "md:col-span-1",
+    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />
+  },
+  {
+    title: "AeroMate.AI",
+    description: (
+      <span className="text-sm">
+        Voice-powered travel assistant that helps find cheap flights, check visa
+        rules, and explore destinations. Built with AI + WordPress.
+      </span>
+    ),
+    header: <SkeletonThree />,
+    className: "md:col-span-1",
+    icon: <IconSignature className="h-4 w-4 text-neutral-500" />
   }
 ];
