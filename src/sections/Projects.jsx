@@ -23,7 +23,7 @@ const Projects = () => {
           zIndex: 10,
         }}
       >
-        <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+        <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
       </div>
 
       {/* About Column */}
@@ -37,6 +37,7 @@ const Projects = () => {
         }}
       >
         <About />
+
         
       </div>
     </section>

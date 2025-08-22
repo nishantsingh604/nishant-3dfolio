@@ -12,23 +12,28 @@ import {
 import { motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+// import { PinContainer } from "./ui/3d-pin";
+
+
 
 export function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={twMerge("[&>p:text-lg]", item.className)}
-          icon={item.icon}
-        />
+        // <PinContainer key={i} title={item.title} href={item.link}>
+          <BentoGridItem
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={twMerge("[&>p:text-lg]", item.className)}
+            icon={item.icon}
+          />
+        // </PinContainer>
       ))}
     </BentoGrid>
   );
 }
+
 
 const SkeletonOne = () => {
   const variants = {
@@ -154,28 +159,16 @@ const SkeletonThree = () => {
       <motion.div className="h-full w-full rounded-lg"></motion.div>
     </motion.div>
   );
-};
-const SkeletonFour = () => {
+};const SkeletonFour = () => {
   const first = {
-    initial: {
-      x: 20,
-      rotate: -5
-    },
-    hover: {
-      x: 0,
-      rotate: 0
-    }
+    initial: { x: 20, rotate: -5 },
+    hover: { x: 0, rotate: 0 }
   };
   const second = {
-    initial: {
-      x: -20,
-      rotate: 5
-    },
-    hover: {
-      x: 0,
-      rotate: 0
-    }
+    initial: { x: -20, rotate: 5 },
+    hover: { x: 0, rotate: 0 }
   };
+
   return (
     <motion.div
       initial="initial"
@@ -183,60 +176,71 @@ const SkeletonFour = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
     >
+      {" "}
       <motion.div
         variants={first}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
+        {" "}
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/PFP.png"
           alt="avatar"
           height="100"
           width="100"
           className="rounded-full h-10 w-10"
-        />
+        />{" "}
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Just code in Vanilla Javascript
-        </p>
-        <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
-        </p>
-      </motion.div>
+          {" "}
+          Anne of Green Gables{" "}
+        </p>{" "}
+        <p className="border border-red-500 bg-red-100 mb-5 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          {" "}
+          Happy{" "}
+        </p>{" "}
+      </motion.div>{" "}
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
+        {" "}
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/PFP.png"
           alt="avatar"
           height="100"
           width="100"
           className="rounded-full h-10 w-10"
-        />
+        />{" "}
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is cool, you know
-        </p>
-        <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
-        </p>
-      </motion.div>
+          {" "}
+          I want something like Gone Girl{" "}
+        </p>{" "}
+        <p className="border border-green-500 bg-green-100 mb-5 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          {" "}
+          Thriller{" "}
+        </p>{" "}
+      </motion.div>{" "}
       <motion.div
         variants={second}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
+        {" "}
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/PFP.png"
           alt="avatar"
           height="100"
           width="100"
           className="rounded-full h-10 w-10"
-        />
+        />{" "}
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular, RSC, and Redux.
-        </p>
-        <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
-        </p>
-      </motion.div>
+          {" "}
+          American Psycho{" "}
+        </p>{" "}
+        <p className="border border-orange-500 mb-5 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
+          {" "}
+          Dark and Anger{" "}
+        </p>{" "}
+      </motion.div>{" "}
     </motion.div>
   );
 };
+
 const SkeletonFive = () => {
   const variants = {
     initial: {
@@ -270,36 +274,41 @@ const SkeletonFive = () => {
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
       <motion.div
-        variants={variants}
-        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
+        variants={variantsSecond}
+        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
+        <p className="text-xs text-neutral-500" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          https://www.youtube.com/watch?v=dQw4w9WgXcQ
+        </p>
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/PFP.png"
           alt="avatar"
           height="100"
           width="100"
           className="rounded-full h-10 w-10"
         />
-        <p className="text-xs text-neutral-500">
-          There are a lot of cool framerworks out there like React, Angular,
-          Vue, Svelte that can make your life ....
-        </p>
       </motion.div>
       <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
+        variants={variants}
+        className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
-        <p className="text-xs text-neutral-500">Use PHP.</p>
         <div className="h-6 w-6 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 shrink-0" />
+        <p className="text-xs text-neutral-500">
+          Rick Astley’s “Never Gonna Give You Up” is a hit 1987 pop song that
+          became iconic worldwide and later famous again as the “rickroll”
+          internet meme.
+        </p>
       </motion.div>
     </motion.div>
   );
 };const items = [
   {
-    title: "AI Content Generation",
+    title: "JobSensAi",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        This simplifies job hunting with smart AI-driven resume building,
+        personalized career coaching, and seamless user onboarding. W Get hired,
+        the smart way!
       </span>
     ),
     header: <SkeletonOne />,
@@ -307,10 +316,12 @@ const SkeletonFive = () => {
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "Automated Proofreading",
+    title: "PicScreen",
     description: (
       <span className="text-sm">
-        Let AI handle the proofreading of your documents.
+        A full-stack platform to record screens, securely upload, and instantly
+        share videos; with simple tools, cloud storage, and link-based sharing
+        for effortless content creation and distribution.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -318,10 +329,12 @@ const SkeletonFive = () => {
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "Contextual Suggestions",
+    title: "Instamart-Revamp",
     description: (
       <span className="text-sm">
-        Get AI-powered suggestions based on your writing context.
+        This is a UI/UX front-end redesign project taken up as a challenge of
+        Swiggy Instamart's desktop website, made with pure HTML, CSS, and
+        vanilla JavaScript.
       </span>
     ),
     header: <SkeletonThree />,
@@ -329,10 +342,16 @@ const SkeletonFive = () => {
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "Sentiment Analysis",
+    title: "Panne & Panne-Picks",
     description: (
       <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
+        Panne is a modern, scalable, and efficient library solution designed to
+        streamline book borrowing, user management, and administrative
+        workflows. Built with cutting-edge technologies, this system provides an
+        intuitive experience for both students and administrators.
+        <br></br>Panne-Picks is an extension tool for the recent project
+        "Panne". It uses ai, ml and llm to recommend books based on different
+        analysis methods.
       </span>
     ),
     header: <SkeletonFour />,
@@ -340,51 +359,52 @@ const SkeletonFive = () => {
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "Text Summarization",
+    title: "YT Summarizer",
     description: (
       <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+        YouTube Summarizer quickly turns YouTube videos into short, readable
+        summaries using AI—just paste a link and get the gist in seconds.
       </span>
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />
-  },
-  // 🚀 New Projects from Resume / GitHub
-  {
-    title: "SJF CPU Scheduler",
-    description: (
-      <span className="text-sm">
-        Web-based simulator for Shortest Job First scheduling, built with HTML,
-        CSS & JS. Visualizes process execution & turnaround times.
-      </span>
-    ),
-    header: <SkeletonOne />,
-    className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />
-  },
-  {
-    title: "Banker's Algorithm in Java",
-    description: (
-      <span className="text-sm">
-        Implementation of Banker's Algorithm for deadlock avoidance with
-        real-time allocation & safety checks.
-      </span>
-    ),
-    header: <SkeletonTwo />,
-    className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />
-  },
-  {
-    title: "AeroMate.AI",
-    description: (
-      <span className="text-sm">
-        Voice-powered travel assistant that helps find cheap flights, check visa
-        rules, and explore destinations. Built with AI + WordPress.
-      </span>
-    ),
-    header: <SkeletonThree />,
-    className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />
   }
+  // // 🚀 New Projects from Resume / GitHub
+  // {
+  //   title: "SJF CPU Scheduler",
+  //   description: (
+  //     <span className="text-sm">
+  //       Web-based simulator for Shortest Job First scheduling, built with HTML,
+  //       CSS & JS. Visualizes process execution & turnaround times.
+  //     </span>
+  //   ),
+  //   header: <SkeletonOne />,
+  //   className: "md:col-span-1",
+  //   icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />
+  // },
+  // // {
+  // //   title: "Banker's Algorithm in Java",
+  // //   description: (
+  // //     <span className="text-sm">
+  // //       Implementation of Banker's Algorithm for deadlock avoidance with
+  // //       real-time allocation & safety checks.
+  // //     </span>
+  // //   ),
+  // //   header: <SkeletonTwo />,
+  // //   className: "md:col-span-1",
+  // //   icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />
+  // // },
+  // // {
+  // //   title: "AeroMate.AI",
+  // //   description: (
+  // //     <span className="text-sm">
+  // //       Voice-powered travel assistant that helps find cheap flights, check visa
+  // //       rules, and explore destinations. Built with AI + WordPress.
+  // //     </span>
+  // //   ),
+  // //   header: <SkeletonThree />,
+  // //   className: "md:col-span-1",
+  // //   icon: <IconSignature className="h-4 w-4 text-neutral-500" />
+  // // }
 ];

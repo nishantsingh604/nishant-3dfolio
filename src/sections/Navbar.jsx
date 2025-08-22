@@ -23,7 +23,6 @@ const Navbard = () => {
   return (
     <div className="relative w-full mt-3 z-50">
       <Navbar>
-        {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
