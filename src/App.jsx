@@ -2,14 +2,10 @@ import React from "react";
 import Navbard from "./sections/Navbar";
 import Hero from "./sections/Hero";
 
-// import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
-// import Experiences from "./sections/Experiences";
-// import Testimonial from "./sections/Testimonial";
-// import Contact from "./sections/Contact";
-// import Footer from "./sections/Footer";
+
 const App = () => {
   return (
     <>
@@ -18,9 +14,18 @@ const App = () => {
         <Hero />
       </div>
 
-      <Projects />
-      <Experience />
-<Contact />
+      {/* Sections with IDs */}
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="experience">
+        <Experience />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
     </>
   );
 };

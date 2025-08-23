@@ -8,7 +8,7 @@ const HeroText = () => {
     visible: { opacity: 1, x: 0 }
   };
   return (
-    <div className="z-10  pt-18 pb-20 text-center md:mt-36 md:text-left  isolate  w-180 rounded-xl bg-black/70 shadow-lg ring-1 ring-black/5 -ml-10 ">
+    <div className="z-10  pt-20 pb-25 text-center md:mt-36 md:text-left  isolate  w-180 rounded-xl bg-black/70 shadow-lg ring-1 ring-black/5 -ml-10 ">
       {/* Desktop View */}
       <div className="flex-col hidden md:flex c-space">
         <motion.h1

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import HeroText from "./../components/HeroText";
-import DotGrid from "./../components/DotGrid";
+// import DotGrid from "./../components/DotGrid";
+import DarkVeil from './../components/DarkVeil';
 
 const Hero = () => {
   useEffect(() => {
@@ -18,11 +19,12 @@ const Hero = () => {
           top: 0,
           left: 0,
           width: "100%",
-          height: "100%",
+          height: "100vh",
           zIndex: -1
         }}
       >
-        <DotGrid
+        <DarkVeil />
+        {/* <DotGrid
           dotSize={10}
           gap={15}
           activeColor="#FFFFFF"
@@ -32,7 +34,7 @@ const Hero = () => {
           shockStrength={5}
           resistance={750}
           returnDuration={1.5}
-        />
+        /> */}
       </div>
       <HeroText />
       <spline-viewer

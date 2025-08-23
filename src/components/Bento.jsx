@@ -179,7 +179,7 @@ const SkeletonThree = () => {
       {" "}
       <motion.div
         variants={first}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border  border-neutral-200 flex flex-col items-center justify-center"
       >
         {" "}
         <img
@@ -205,13 +205,13 @@ const SkeletonThree = () => {
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className="rounded-full h-10 mt-2 w-10"
         />{" "}
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
+        <p className="sm:text-sm  text-xs text-center font-semibold text-neutral-500 mt-4">
           {" "}
           I want something like Gone Girl{" "}
         </p>{" "}
-        <p className="border border-green-500 bg-green-100 mb-5 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
+        <p className="border border-green-500 bg-green-100 mb-5 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4 ">
           {" "}
           Thriller{" "}
         </p>{" "}

@@ -12,11 +12,12 @@ import {
 import { useState } from "react";
 
 const Navbard = () => {
-  const navItems = [
-    { name: "About", link: "#features" },
-    { name: "Projects", link: "#pricing" },
-    { name: "Contact", link: "#contact" }
-  ];
+ const navItems = [
+  { name: "About", link: "#projects" },
+  { name: "Projects", link: "#experience" },
+  { name: "Contact", link: "#contact" }
+];
+
 
   // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -33,7 +34,14 @@ const Navbard = () => {
             >
               Github
             </NavbarButton>
-            <NavbarButton variant="primary">Resume</NavbarButton>
+            <NavbarButton
+              variant="primary"
+              href={
+                "https://drive.google.com/file/d/1E9MyjEBsj6udmYjtcw0M0atTJNsL5Li6/view?usp=sharing"
+              }
+            >
+              Resume
+            </NavbarButton>
           </div>
         </NavBody>
 

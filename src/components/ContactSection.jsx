@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section className="w-full bg-white mt-8 mb-2 pb-4.5 flex flex-col md:flex-row items-start md:items-center justify-center gap-8 px-6 md:px-16 py-12">
+    <section className="w-full bg-white mt-8  pb-4.5 flex flex-col md:flex-row items-start md:items-center justify-center gap-8 px-6 md:px-16 py-12">
       {/* Left side (Image placeholder 40%) */}
       <div className="w-full md:w-2/5 flex items-center justify-center">
         <div className="w-full h-60 md:h-96 rounded-xl flex items-center justify-center">
