@@ -13,18 +13,18 @@ const HeroText = () => {
         </h1>
 
         <p className="text-2xl md:text-3xl font-medium text-neutral-300">
-          Hi, I am <span className="text-white font-semibold">Nishant</span>
+          Hi, I am <span className="text-white font-semibold">Nishant.</span>
         </p>
 
-        <div className="text-lg md:text-2xl text-neutral-200 max-w-3xl leading-relaxed">
+        <div className="text-lg md:text-2xl text-neutral-200 max-w-3xl ">
           <DecryptedText
             text="I'm a full-stack developer and designer creating AI-enhanced solutions and crafting thoughtful user experiences."
             speed={60}
             maxIterations={20}
             characters="ABCD1234!?"
             className="font-medium"
-            parentClassName="all-letters"
-            encryptedClassName="encrypted"
+            // parentClassName="all-letters"
+            // encryptedClassName="encrypted"
           />
         </div>
       </div>
