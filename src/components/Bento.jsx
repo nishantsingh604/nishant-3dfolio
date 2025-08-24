@@ -12,6 +12,7 @@ import {
 import { motion } from "motion/react";
 import { twMerge } from "tailwind-merge";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import { LinkPreview } from "./ui/link-preview";
 // import { PinContainer } from "./ui/3d-pin";
 
 
@@ -303,7 +304,15 @@ const SkeletonFive = () => {
   );
 };const items = [
   {
-    title: "JobSensAi",
+    title: (
+      <LinkPreview
+        url="https://github.com/nishantsingh604/jobsensai"
+        className="flex items-center gap-2"
+      >
+        <span className="font-bold">JobSensAi</span>
+      </LinkPreview>
+    ),
+
     description: (
       <span className="text-sm">
         This simplifies job hunting with smart AI-driven resume building,
@@ -316,7 +325,15 @@ const SkeletonFive = () => {
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "PicScreen",
+    title: (
+      <LinkPreview
+        url="https://github.com/nishantsingh604/picscreen"
+        className="flex items-center gap-2"
+      >
+        <span className="font-bold">PicScreen</span>
+      </LinkPreview>
+    ),
+
     description: (
       <span className="text-sm">
         A full-stack platform to record screens, securely upload, and instantly
@@ -329,7 +346,15 @@ const SkeletonFive = () => {
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "Instamart-Revamp",
+    title: (
+      <LinkPreview
+        url="https://github.com/nishantsingh604/instamart-revamp"
+        className="flex items-center gap-2"
+      >
+        <span className="font-bold">Instamart-Revamp</span>
+      </LinkPreview>
+    ),
+
     description: (
       <span className="text-sm">
         This is a UI/UX front-end redesign project taken up as a challenge of
@@ -342,7 +367,23 @@ const SkeletonFive = () => {
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "Panne & Panne-Picks",
+    title: (
+      <span className="flex items-center gap-2">
+        <LinkPreview
+          url="https://github.com/nishantsingh604/Panne-App"
+          className="flex items-center gap-2"
+        >
+          <span className="font-bold">Panne</span>
+        </LinkPreview>
+        <LinkPreview
+          url="https://github.com/nishantsingh604/panne-picks"
+          className="flex items-center gap-2"
+        >
+          <span className="font-bold">& Panne-Picks</span>
+        </LinkPreview>
+      </span>
+    ),
+
     description: (
       <span className="text-sm">
         Panne is a modern, scalable, and efficient library solution designed to
@@ -359,7 +400,15 @@ const SkeletonFive = () => {
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />
   },
   {
-    title: "YT Summarizer",
+    title: (
+      <LinkPreview
+        url="https://github.com/nishantsingh604/yt-summarizer"
+        className="flex items-center gap-2"
+      >
+        <span className="font-bold">Yt-Summarizer</span>
+      </LinkPreview>
+    ),
+
     description: (
       <span className="text-sm">
         YouTube Summarizer quickly turns YouTube videos into short, readable
