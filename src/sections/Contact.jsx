@@ -6,7 +6,7 @@ const Contact = () => {
     return (
       <section className="w-full h-full min-h-screen bg-white  pt-20">
         <ContactSection />
-        <div style={{ position: "relative", height: "250px" }}>
+        <div style={{ position: "relative", height: "270px" }}>
           <TextPressure
             text="Nishant"
             flex={true}
@@ -20,6 +20,7 @@ const Contact = () => {
             minFontSize={36}
           />
         </div>{" "}
+        
       </section>
     );
 };

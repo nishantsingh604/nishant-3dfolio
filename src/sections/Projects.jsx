@@ -1,47 +1,37 @@
-import About from "../components/About";
-import Lanyard from "../components/Lanyard/Lanyard";
+import React from "react";
+import { BentoGridThirdDemo } from "../components/Bento";
+import TrueFocus from "@/components/TrueFocus";
 
-
-const Projects = () => {
+const Experience = () => {
   return (
     <section
-      className="w-full bg-white flex flex-col md:flex-row items-center justify-center overflow-hidden"
+      className="w-full bg-black flex flex-col items-center justify-center overflow-hidden px-4 py-12"
       style={{
         margin: 0,
         padding: 0,
-        minHeight: "60vh" // shorter height
+        minHeight: "100vh"
       }}
     >
-      {/* Lanyard Column */}
-      <div
-        className="flex justify-center items-center"
-        style={{
-          flex: "0 0 40%",
-          width: "100%",
-          height: "100%",
-          pointerEvents: "auto",
-          zIndex: 10,
-        }}
-      >
-        <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} />
-      </div>
+      {/* Heading */}
+      <h2 className="text-4xl md:text-5xl font-bold text-white mb-12">
+        <TrueFocus
+          sentence="Selected Projects"
+          manualMode={true}
+          blurAmount={5}
+          borderColor="blue"
+          animationDuration={1}
+          pauseBetweenAnimations={0.5}
+        />
+      </h2>
 
-      {/* About Column */}
-      <div
-        className="flex justify-center items-center"
-        style={{
-          flex: "0 0 60%",
-          width: "100%",
-          height: "100%",
-          zIndex: 7,
-        }}
-      >
-        <About />
-
+      {/* Grid below heading */}
+      <div className="w-full max-w-6xl">
+        <BentoGridThirdDemo />
         
       </div>
     </section>
+    
   );
 };
 
-export default Projects;
+export default Experience;

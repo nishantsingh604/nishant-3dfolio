@@ -184,9 +184,9 @@ export const NavbarLogo = () => {
       <img
         src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWN4ZHprZG04MXk1d3UxMHFwYXJpaGd2Z2U1OGhsNXVvN2UxNGIxcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H7gdwW1UOWyRlVYpwt/giphy.gif"
         alt="logo"
-        width={40}
-        height={40}
-        className="rounded-xl mr-3.5"
+        width={45}
+        height={45}
+        className="rounded-xl mr-3.5 "
       />
       <span className="font-medium text-black dark:text-white ">
         Nishant Singh

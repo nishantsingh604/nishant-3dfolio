@@ -137,6 +137,8 @@ body {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
+

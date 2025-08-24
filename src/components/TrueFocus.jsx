@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 
 const TrueFocus = ({
-  sentence = "Some Projects",
+  sentence = "Selected Projects",
   manualMode = true,
   blurAmount = 5,
   borderColor = "green",
