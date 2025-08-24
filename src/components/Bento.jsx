@@ -15,26 +15,27 @@ import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import { LinkPreview } from "./ui/link-preview";
 // import { PinContainer } from "./ui/3d-pin";
 
-
-
 export function BentoGridThirdDemo() {
   return (
     <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[20rem]">
-      {items.map((item, i) => (
+      {items.map((item, i) =>
         // <PinContainer key={i} title={item.title} href={item.link}>
-          <BentoGridItem
-            title={item.title}
-            description={item.description}
-            header={item.header}
-            className={twMerge("[&>p:text-lg]", item.className)}
-            icon={item.icon}
-          />
+        <BentoGridItem
+          title={item.title}
+          description={item.description}
+          header={item.header}
+          className={twMerge(
+            "[&>p:text-lg]",
+            item.className,
+            "hover:border-blue-400 hover:bg-gray-900 hover:border-6 transistion-all duration-800"
+          )}
+          icon={item.icon}
+        />
         // </PinContainer>
-      ))}
+      )}
     </BentoGrid>
   );
 }
-
 
 const SkeletonOne = () => {
   const variants = {
@@ -118,7 +119,7 @@ const SkeletonTwo = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
+      {arr.map((_, i) =>
         <motion.div
           key={"skelenton-two" + i}
           variants={variants}
@@ -126,8 +127,8 @@ const SkeletonTwo = () => {
             maxWidth: Math.random() * (100 - 40) + 40 + "%"
           }}
           className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
-      ))}
+        />
+      )}
     </motion.div>
   );
 };
@@ -157,10 +158,11 @@ const SkeletonThree = () => {
         backgroundSize: "400% 400%"
       }}
     >
-      <motion.div className="h-full w-full rounded-lg"></motion.div>
+      <motion.div className="h-full w-full rounded-lg" />
     </motion.div>
   );
-};const SkeletonFour = () => {
+};
+const SkeletonFour = () => {
   const first = {
     initial: { x: 20, rotate: -5 },
     hover: { x: 0, rotate: 0 }
@@ -177,13 +179,11 @@ const SkeletonThree = () => {
       whileHover="hover"
       className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
     >
-      {" "}
-      <motion.div
+      {" "}<motion.div
         variants={first}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border  border-neutral-200 flex flex-col items-center justify-center"
       >
-        {" "}
-        <img
+        {" "}<img
           src="/PFP.png"
           alt="avatar"
           height="100"
@@ -191,17 +191,14 @@ const SkeletonThree = () => {
           className="rounded-full h-10 w-10"
         />{" "}
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          {" "}
-          Anne of Green Gables{" "}
+          {" "}Anne of Green Gables{" "}
         </p>{" "}
         <p className="border border-red-500 bg-red-100 mb-5 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          {" "}
-          Happy{" "}
+          {" "}Happy{" "}
         </p>{" "}
       </motion.div>{" "}
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
-        {" "}
-        <img
+        {" "}<img
           src="/PFP.png"
           alt="avatar"
           height="100"
@@ -209,20 +206,17 @@ const SkeletonThree = () => {
           className="rounded-full h-10 mt-2 w-10"
         />{" "}
         <p className="sm:text-sm  text-xs text-center font-semibold text-neutral-500 mt-4">
-          {" "}
-          I want something like Gone Girl{" "}
+          {" "}I want something like Gone Girl{" "}
         </p>{" "}
         <p className="border border-green-500 bg-green-100 mb-5 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4 ">
-          {" "}
-          Thriller{" "}
+          {" "}Thriller{" "}
         </p>{" "}
       </motion.div>{" "}
       <motion.div
         variants={second}
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
-        {" "}
-        <img
+        {" "}<img
           src="/PFP.png"
           alt="avatar"
           height="100"
@@ -230,12 +224,10 @@ const SkeletonThree = () => {
           className="rounded-full h-10 w-10"
         />{" "}
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          {" "}
-          American Psycho{" "}
+          {" "}American Psycho{" "}
         </p>{" "}
         <p className="border border-orange-500 mb-5 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          {" "}
-          Dark and Anger{" "}
+          {" "}Dark and Anger{" "}
         </p>{" "}
       </motion.div>{" "}
     </motion.div>
@@ -278,7 +270,10 @@ const SkeletonFive = () => {
         variants={variantsSecond}
         className="flex flex-row rounded-full border border-neutral-100 dark:border-white/[0.2] p-2 items-center justify-end space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
       >
-        <p className="text-xs text-neutral-500" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+        <p
+          className="text-xs text-neutral-500"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        >
           https://www.youtube.com/watch?v=dQw4w9WgXcQ
         </p>
         <img
@@ -302,7 +297,8 @@ const SkeletonFive = () => {
       </motion.div>
     </motion.div>
   );
-};const items = [
+};
+const items = [
   {
     title: (
       <LinkPreview
@@ -390,9 +386,9 @@ const SkeletonFive = () => {
         streamline book borrowing, user management, and administrative
         workflows. Built with cutting-edge technologies, this system provides an
         intuitive experience for both students and administrators.
-        <br></br>Panne-Picks is an extension tool for the recent project
-        "Panne". It uses ai, ml and llm to recommend books based on different
-        analysis methods.
+        <br />Panne-Picks is an extension tool for the recent project "Panne".
+        It uses ai, ml and llm to recommend books based on different analysis
+        methods.
       </span>
     ),
     header: <SkeletonFour />,
