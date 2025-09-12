@@ -1,3 +1,6 @@
+<img width="2534" height="1457" alt="image" src="https://github.com/user-attachments/assets/af22091b-68d3-4992-844b-e85bcbb3f8c1" />
+
+
 # nishant-3dfolio
 
 > **A 3D interactive portfolio** by **Nishant Singh** — built with React, Next.js and Vite. This site explores visual experimentation, component-driven UI, embedded audio experiences, and 3D interaction using Spline. The live site is deployed on Vercel and the full source code is available on GitHub.
