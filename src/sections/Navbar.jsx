@@ -37,7 +37,7 @@ const Navbard = () => {
             <NavbarButton
               variant="primary"
               href={
-                "https://drive.google.com/file/d/1E9MyjEBsj6udmYjtcw0M0atTJNsL5Li6/view?usp=sharing"
+                "https://drive.google.com/file/d/1wL7o_nQzwUPsIsHsXgoPikOLre7PdeDW/view?usp=sharing"
               }
             >
               Resume
