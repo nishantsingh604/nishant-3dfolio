@@ -6,7 +6,7 @@ const Contact = () => {
     return (
       <section className="w-full h-full min-h-screen bg-white  pt-20">
         <ContactSection />
-        <div style={{ position: "relative", height: "270px" }}>
+        <div style={{ position: "relative", height: "540px" }}>
           <TextPressure
             text="Nishant"
             flex={true}
