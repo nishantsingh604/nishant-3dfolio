@@ -4,7 +4,7 @@ import TextPressure from '@/components/TextPressure';
 
 const Contact = () => {
     return (
-      <section className="w-full h-full min-h-screen bg-white  pt-20">
+      <section className="w-full h-full min-h-screen bg-white  pt-50">
         <ContactSection />
         <div style={{ position: "relative", height: "540px" }}>
           <TextPressure
