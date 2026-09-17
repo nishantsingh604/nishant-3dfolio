@@ -37,10 +37,10 @@ const Navbard = () => {
             <NavbarButton
               variant="primary"
               href={
-                "https://drive.google.com/file/d/1wL7o_nQzwUPsIsHsXgoPikOLre7PdeDW/view?usp=sharing"
+                "https://www.linkedin.com/in/nishantsingh604/"
               }
             >
-              Resume
+              LinkedIn
             </NavbarButton>
           </div>
         </NavBody>
